@@ -1,0 +1,23 @@
+安装说明：
+
+
+
+本系统采用ASP。NET 4.0+MSSQL2005环境
+
+
+1、先在MSSQL2005上面建立一个数据库，例如：exam
+
+2、然后单击exam右键，选择任务---还原--数据库，选择常规----源设备--添加--找到根目录下面exam.bak
+
+，进到常规选项，购选替换原来数据库，确定，还原成功。也可以执行根目录下面exnew.sql脚本文件，进行数据库
+
+3、修改web.config
+<add key="strConn" value="server=.;database=Exam;uid=sa;pwd=testtest"/>
+
+修改数据库名，用户名，密码，保存
+
+
+4、NET版本选择4.0
+
+
+5、网址+login.aspx  用户名admin   密码为空
